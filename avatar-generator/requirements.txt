@@ -1,0 +1,10 @@
+git+https://github.com/ShivamShrirao/diffusers
+triton
+accelerate 
+transformers 
+ftfy 
+bitsandbytes==0.35.0 
+gradio 
+natsort 
+safetensors 
+xformers
