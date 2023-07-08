@@ -29,7 +29,7 @@ def generate_content(slides,topic,engine,api_key=None,use_chat=True):
               content=get_content_from_openai(prompt,engine,api_key,use_chat)
           except Exception as e:
               content=None
-              print(e)
+              print("Error: ",e)
   try:
       dict_content=json.loads(content)
       return dict_content
@@ -64,13 +64,13 @@ def generate_template(style,slides,content,bg_image,image_source="Unsplash",mode
     if 'img' in content[slide].keys():
       try:
         img_prompt=content[slide]['img']
-        img=IMAGE_FUNCTIONS[image_source](img_prompt, orientation,model)
+        img=IMAGE_FUNCTIONS[image_source](img_prompt, orientation,None,model)
         content[slide]['img']=image_to_base64(img)
       except Exception as e:
         img_prompt=content[slide]['img']
-        img=generate_sd_image(img_prompt, orientation,model)
+        img=generate_sd_image(img_prompt, orientation,None,model)
         content[slide]['img']=image_to_base64(img)
-        print(e)
+        print("Error: ",e)
     div_jinja=Template(str(selected_div))
     
     selected_div=div_jinja.render(content[slide])

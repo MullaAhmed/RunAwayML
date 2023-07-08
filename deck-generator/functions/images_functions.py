@@ -57,7 +57,7 @@ def get_pexels_img(query, orientation='portrait',  token = None,model=None) :
     response = requests.get(request_query, headers=headers)
     if response.status_code != 200:
         return None
-
+    
     data = response.json()
     results = data['photos']
    
