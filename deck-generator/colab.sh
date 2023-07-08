@@ -15,9 +15,22 @@ wget -q -P functions https://github.com/MullaAhmed/RunAwayML/raw/main/deck-gener
 wget -q -P functions https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/functions/images_functions.py
 
 # Downloading background images
-wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style1.png
-wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style2.png
-wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style3.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style10.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style11.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style12.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style13.png
+
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style20.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style21.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style22.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style23.png
+
+
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style30.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style31.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style32.png
+wget -q -P templates/backgrounds https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/backgrounds/bg_img_style33.png
+
 
 # Downloading .html files
 wget -q -P templates/components https://github.com/MullaAhmed/RunAwayML/raw/main/deck-generator/templates/components/components.html

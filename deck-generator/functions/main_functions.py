@@ -65,11 +65,11 @@ def generate_template(style,slides,content,bg_image,image_source="Unsplash",mode
       try:
         img_prompt=content[slide]['img']
         img=IMAGE_FUNCTIONS[image_source](img_prompt, orientation,model)
-        content[slide]['img']=image_to_base64(img,"png")
+        content[slide]['img']=image_to_base64(img)
       except Exception as e:
         img_prompt=content[slide]['img']
         img=generate_sd_image(img_prompt, orientation,model)
-        content[slide]['img']=image_to_base64(img,"png")
+        content[slide]['img']=image_to_base64(img)
         print(e)
     div_jinja=Template(str(selected_div))
     
