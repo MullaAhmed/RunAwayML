@@ -1,4 +1,6 @@
 import openai
+import pdfkit
+
 def get_content_from_openai(prompt, engine,api_key,use_chat=False):
 
     openai.api_key = api_key
