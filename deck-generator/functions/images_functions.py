@@ -1,17 +1,16 @@
 from PIL import Image
 from io import BytesIO
 import requests,random,cv2,base64
-from constants import *
+from .constants import *
 import numpy as np
 from diffusers import DiffusionPipeline
 
 def get_background(style):
     images=BACKGROUNDS[style]
-    print(random.choice(images))
     img=Image.open(random.choice(images))
     return img
 
-get_background(style="style1.css")
+
 
 def url_to_image(url) :
 
