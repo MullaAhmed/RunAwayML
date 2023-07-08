@@ -1,0 +1,42 @@
+{
+  "slide-1:title": {
+    "title": "Adversarial Attacks",
+    "subtitle": "and Defenses"
+  },
+  "slide-2:info-1": {
+    "heading": "Adversarial Attacks on BERT Models",
+    "paragraphs": [
+      "Adversarial attacks refer to the deliberate manipulation of input data to fool a machine learning model. In the context of BERT models, these attacks aim to exploit vulnerabilities and mislead the model's predictions.",
+      "Attack techniques like adversarial perturbations, where imperceptible modifications are made to input tokens, can lead to significant changes in the model's output. Adversarial attacks on BERT models can be classified into various categories, such as input modification attacks, data poisoning attacks, and model inversion attacks.",
+      "These attacks pose a serious threat to the security and reliability of BERT models, as they can be used to manipulate outcomes, compromise privacy, or exploit vulnerabilities in downstream applications.",
+      "Understanding the mechanisms of adversarial attacks on BERT models is crucial for developing effective defenses and improving the robustness of these models in real-world scenarios.",
+      "In the following slides, we will explore different types of adversarial attacks and the corresponding defenses for BERT models."
+    ],
+    "img": "An image depicting an attacker modifying input tokens of a BERT model to deceive its predictions and exploit vulnerabilities."
+  },
+  "slide-3:info-2": {
+    "heading": "Defenses against Adversarial Attacks on BERT Models",
+    "paragraphs": [
+      "Defending BERT models against adversarial attacks is an active area of research. Several defense mechanisms have been proposed to enhance the robustness of BERT models.",
+      "One approach is adversarial training, where the model is trained on both clean and adversarial examples to improve its resistance to attacks. Another technique is defensive distillation, which involves training a second model on the softened predictions of the original model.",
+      "Additionally, model ensembling, input transformation, and gradient regularization are some other defense strategies that can be employed to mitigate the impact of adversarial attacks.",
+      "However, it is important to note that no defense mechanism is foolproof, and attackers continuously evolve their techniques. Therefore, ongoing research is crucial to develop more resilient defenses against adversarial attacks on BERT models.",
+      "In the next slides, we will delve into these defense strategies in more detail and explore their effectiveness."
+    ],
+    "img": "An illustration showcasing different defense strategies employed to protect BERT models against adversarial attacks, including adversarial training, defensive distillation, and model ensembling."
+  },
+  "slide-4:bullets": {
+    "title": "Common Types of Adversarial Attacks",
+    "bullets": [
+      "1. Adversarial perturbations: Manipulating input tokens to deceive the model.",
+      "2. Data poisoning attacks: Injecting malicious examples into the training data.",
+      "3. Model inversion attacks: Extracting sensitive information from the model's outputs.",
+      "4. Gradient-based attacks: Modifying the gradients to mislead the model's learning process.",
+      "5. Universal adversarial perturbations: Crafting perturbations that fool multiple inputs."
+    ]
+  },
+  "slide-5:img": {
+    "title": "Illustration of an Adversarial Attack",
+    "img": "A visual representation of an attacker manipulating input tokens to deceive a BERT model, resulting in altered predictions."
+  }
+}

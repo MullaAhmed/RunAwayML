@@ -1,0 +1,11 @@
+{
+  "title"  : { "title":"","subtitle":"" },
+
+  "info-1" : { "heading":"","paragraphs":[], "img":"" },
+
+  "info-2" : { "heading":"","paragraphs":[], "img":"" },
+
+  "bullets": { "title":"", "bullets":[] },
+  
+  "img"    : { "title":"", "img":"" }
+}

@@ -1,0 +1,90 @@
+<!--  -->
+
+<div class="title">
+  <div class="body">
+    <div class="title-slide">
+      <div class="title-content">
+        <h1>{{ title }}</h1>
+        <p>{{ subtitle }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  -->
+
+<div class="bullets">
+  <div class="body">
+    <div class="title-slide">
+
+      <div class="box-container">
+
+        <h1>{{ title }}</h1>
+
+        {% for b in bullets %}
+        <div class="box">
+          <div class="box-content">
+            <p>{{ b }}</p>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--  -->
+
+<div class="img">
+  <div class="body">
+    <div class="img-slide">
+      <div class="img-title">
+        <h1>{{ title }}</h1>
+      </div>
+      <div class="img-img">
+        <img src="{{ img }}" alt="Hero Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  -->
+
+<div class="info-1">
+  <div class="body">
+    <div class="info-1-slide">
+      <div class="info-1-content">
+        <h1>{{ heading }}</h1>
+        {% for c in paragraphs %}
+        <p> {{ c }}</p>
+        {% endfor %}
+      </div>
+      <div class="info-1-img">
+        <img src="{{ img }}" alt="Hero Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  -->
+
+<div class="info-2">
+  <div class="body">
+    <div class="info-2-slide">
+      <div class="info-2-img">
+        <img src="{{ img }}" alt="Hero Image">
+      </div>
+      <div class="info-2-content">
+        <h1>{{ heading }}</h1>
+        {% for c in paragraphs %}
+        <p> {{ c }}</p>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--  -->
