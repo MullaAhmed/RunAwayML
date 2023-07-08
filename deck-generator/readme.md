@@ -68,9 +68,9 @@ To utilize the Deck Generator, follow these steps:
 `api.py`: Flask app that exposes API endpoints for the Deck Generator application.
 
 `Dockerfile`: Can be used to deploy the `api.py` file.
-
+<!-- 
 ## Video
-https://github.com/MullaAhmed/RunAwayML/assets/67974888/2e6adb61-87d0-4a1e-be2c-1a6af12ee566
+https://github.com/MullaAhmed/RunAwayML/assets/67974888/2e6adb61-87d0-4a1e-be2c-1a6af12ee566 -->
 
 ## License
 
