@@ -13,7 +13,7 @@
 
 <!--  -->
 
-<div class="bullets">
+<div class="points">
   <div class="body">
     <div class="title-slide">
 
@@ -21,7 +21,7 @@
 
         <h1>{{ title }}</h1>
 
-        {% for b in bullets %}
+        {% for b in points %}
         <div class="box">
           <div class="box-content">
             <p>{{ b }}</p>
@@ -52,16 +52,16 @@
 
 <!--  -->
 
-<div class="info-1">
+<div class="para-1">
   <div class="body">
-    <div class="info-1-slide">
-      <div class="info-1-content">
+    <div class="para-1-slide">
+      <div class="para-1-content">
         <h1>{{ heading }}</h1>
         {% for c in paragraphs %}
         <p> {{ c }}</p>
         {% endfor %}
       </div>
-      <div class="info-1-img">
+      <div class="para-1-img">
         <img src="{{ img }}" alt="Hero Image">
       </div>
     </div>
@@ -70,13 +70,13 @@
 
 <!--  -->
 
-<div class="info-2">
+<div class="para-2">
   <div class="body">
-    <div class="info-2-slide">
-      <div class="info-2-img">
+    <div class="para-2-slide">
+      <div class="para-2-img">
         <img src="{{ img }}" alt="Hero Image">
       </div>
-      <div class="info-2-content">
+      <div class="para-2-content">
         <h1>{{ heading }}</h1>
         {% for c in paragraphs %}
         <p> {{ c }}</p>

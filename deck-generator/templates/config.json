@@ -1,11 +1,11 @@
 {
   "title"  : { "title":"","subtitle":"" },
 
-  "info-1" : { "heading":"","paragraphs":[], "img":"" },
+  "para-1" : { "heading":"","paragraphs":[], "img":"" },
 
-  "info-2" : { "heading":"","paragraphs":[], "img":"" },
+  "para-2" : { "heading":"","paragraphs":[], "img":"" },
 
-  "bullets": { "title":"", "bullets":[] },
+  "points": { "title":"", "points":[] },
   
   "img"    : { "title":"", "img":"" }
 }

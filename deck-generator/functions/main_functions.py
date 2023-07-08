@@ -19,7 +19,7 @@ def generate_content(slides,topic,engine,api_key=None,use_chat=True):
   for slide in slides:
       json_data[slide]=data_dict[slide.split(":")[1]]
 
-  prompt= """fill this json with content regarding the {topic} title must be less than 7 words, subtitle must be less than 17 words , paragraphs must an array, each of atleast 120 words, and bullets must be an array of at most 5 each of atleast 10 words, img must be a text description of an image corresponding to the content of the slide
+  prompt= """fill this json with content regarding the {topic} title must be less than 7 words, subtitle must be less than 17 words , paragraphs must an array, each of atleast 120 words, and points must be an array of at most 5 each of atleast 10 words, img must be a text description of an image corresponding to the content of the slide
           {json_format}""".format(topic=topic,json_format=json_data)
 
   content=None
