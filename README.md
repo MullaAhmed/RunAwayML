@@ -1,6 +1,6 @@
 # Project RunAwayML
 
-Welcome to the **Project RunAwayML** GitHub repository! This repository is intented to host a collection of interesting AI applications in the form of easy-to-use Jupyter Notebook (`.ipynb`) files and Google Colab links. The aim of this project is to provide accessible and user-friendly AI applications that anyone can explore and utilize.
+Welcome to the **Project RunAwayML** GitHub repository! This repository is intended to host a collection of interesting AI applications in the form of easy-to-use Jupyter Notebook (`.ipynb`) files and Google Colab links. The aim of this project is to provide accessible and user-friendly AI applications that anyone can explore and utilize.
 
 ## About
 
