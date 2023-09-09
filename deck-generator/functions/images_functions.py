@@ -10,30 +10,17 @@ def get_background(style):
     img=Image.open(random.choice(images))
     return img
 
-def url_to_image(urls):
-    images = []
-    for url in urls:
-        response = requests.get(url)
-        image = Image.open(BytesIO(response.content))
-        images.append(image)
-    return images
 
-def image_to_base64(image):
-    header = "data:image/png;base64,"
-    if isinstance(image, np.ndarray):
-        _, image_encoded = cv2.imencode("png", image)
-    else:
-        with BytesIO() as buffer:
-            image.save(buffer, format="png")
-            buffer.seek(0)
-            image_encoded = buffer.getvalue()
-            buffer.truncate(0)
-    base64_string = base64.b64encode(image_encoded).decode("utf-8")
-    return f"{header}{base64_string}"
+def url_to_image(url) :
+
+    images = [Image.open(BytesIO(requests.get(image_url).content)) for image_url in url]
+
+    return images
 
 def get_unsplash_img(query, orientation='portrait',  token= None,model=None) :
 
     api_key_unsplash = token if token else "xUtDrJibYywEGkH22JqoJ2Mc32iIFDVd_3767V6gNgM"
+    
     base = "https://api.unsplash.com/search/photos/"
     request_query = f'{base}?query={query}&orientation={orientation}&per_page=10&client_id={api_key_unsplash}'
     response = requests.get(request_query)
@@ -73,7 +60,8 @@ def get_pexels_img(query, orientation='portrait',  token = None,model=None) :
     random.shuffle(images)  # Shuffle the results for randomness
     return images[0]
 
-def generate_sd_image(prompt, orientation='portrait',  model = "Lykon/DreamShaper"):
+def generate_sd_image(prompt, orientation='portrait', token = None, model = "Lykon/DreamShaper"):
+
     pipeline = DiffusionPipeline.from_pretrained(model)
     pipeline.to(DEVICE)
    
@@ -86,9 +74,30 @@ def generate_sd_image(prompt, orientation='portrait',  model = "Lykon/DreamShape
 
     neg = NEG_PROMPT
     images = pipeline(
-                prompt,guidance_scale=7.5,
-                num_inference_steps=25, negative_prompt = neg,
-                height=height, width=width
-            ).images
+        prompt,
+        guidance_scale=7.5,
+        num_inference_steps=25,
+        negative_prompt = neg ,
+        
+        height=height,
+        width=width
+    ).images
 
     return images[0]
+
+def image_to_base64(image):
+
+    header = "data:image/png;base64,"
+    if isinstance(image, np.ndarray):
+        _, image_encoded = cv2.imencode("png", image)
+    else:
+        with BytesIO() as buffer:
+            image.save(buffer, format="png")
+            buffer.seek(0)
+            image_encoded = buffer.getvalue()
+            buffer.truncate(0)
+
+    base64_string = base64.b64encode(image_encoded).decode("utf-8")
+
+    return f"{header}{base64_string}"
+
