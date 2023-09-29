@@ -18,7 +18,7 @@
     "adam_beta1":0.9,"adam_beta2":0.999,"adam_weight_decay":1e-2,"adam_epsilon":1e-08,"max_grad_norm":1.0,
     
     "push_to_hub":"False","hub_token":"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",
-    "hub_model_id":"None","logging_dir":"logs","log_interval":10,"save_interval":10000,
+    "hub_model_id":"None","logging_dir":"","log_interval":10,"save_interval":10000,
     "save_min_steps":0,"mixed_precision":"fp16","not_cache_latents":"True","hflip":"False",
     "local_rank":-1,"concepts_list":"None","read_prompts_from_txts":"False"
     }
