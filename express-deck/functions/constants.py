@@ -2,12 +2,11 @@ import torch
 
 
 BACKGROUNDS = {
-    "style1.css": ["./templates/backgrounds/bg_img_style11.png","./templates/backgrounds/bg_img_style12.png","./templates/backgrounds/bg_img_style13.png"],
-    "style2.css": ["./templates/backgrounds/bg_img_style21.png","./templates/backgrounds/bg_img_style22.png","./templates/backgrounds/bg_img_style23.png"],
-    "style3.css": ["./templates/backgrounds/bg_img_style31.png","./templates/backgrounds/bg_img_style32.png","./templates/backgrounds/bg_img_style33.png"]
+    "style1.css": ["./templates/backgrounds/bg_img_style10.png","./templates/backgrounds/bg_img_style11.png","./templates/backgrounds/bg_img_style12.png","./templates/backgrounds/bg_img_style13.png"],
+    "style2.css": ["./templates/backgrounds/bg_img_style20.png","./templates/backgrounds/bg_img_style21.png","./templates/backgrounds/bg_img_style22.png","./templates/backgrounds/bg_img_style23.png"],
+    "style3.css": ["./templates/backgrounds/bg_img_style30.png","./templates/backgrounds/bg_img_style31.png","./templates/backgrounds/bg_img_style32.png","./templates/backgrounds/bg_img_style33.png"]
 }
 
-# "./templates/backgrounds/bg_img_style10.png","./templates/backgrounds/bg_img_style20.png","./templates/backgrounds/bg_img_style30.png",
 
 NEG_PROMPT = """
 "UnrealisticDream, FastNegativeEmbedding,worst quality, low quality:1.4, blurry:1.2,blurry face,
